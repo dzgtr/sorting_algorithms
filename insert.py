@@ -7,5 +7,5 @@ def insertion_sort(pole):
 
 """
 Insert sort works by taking elements from the list one by one and inserting
-them in their correct position into a new sorted list. - wikipedia
+them in their correct position into a new sorted list.
 """
