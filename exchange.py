@@ -7,5 +7,5 @@ def exchange_sort(pole):
 """
 Exchange sort works by comparing the first element with all elements above it, swapping where needed,
 thereby guaranteeing that the first element is correct for the final sort order.
-It then proceeds to do the same for the second element, and so on
+It then proceeds to do the same for the second element, and so on.
 """
