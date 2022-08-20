@@ -12,5 +12,5 @@ def bubble_sort(pole):
 """
 Bubble sort compares the first two elements, and if the first is greater than the second, it swaps them.
 It continues doing this for each pair of adjacent elements to the end of the data set.
-It then starts again with the first two elements, repeating until no swaps have occurred on the last pass
+It then starts again with the first two elements, repeating until no swaps have occurred on the last pass.
 """
