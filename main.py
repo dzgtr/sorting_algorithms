@@ -2,6 +2,7 @@ import random
 import bubble
 import exchange
 import insert
+import selection
 
 
 def random_list(number):
@@ -20,4 +21,6 @@ if __name__ == '__main__':
 #    bubble.bubble_sort(pole)
 #    exchange.exchange_sort(pole)
 #    insert.insertion_sort(pole)
+#    selection.selection_sort(pole)
+
     print(pole)
