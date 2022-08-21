@@ -24,7 +24,7 @@ if __name__ == '__main__':
 #    exchange.exchange_sort(pole)
 #    insert.insertion_sort(pole)
 #    selection.selection_sort(pole)
-#    comb.comb_sort(pole)
+    comb.comb_sort(pole)
 ###############    merge.merge_sort(pole)
 ###############    quick.quick_sort(pole)
 
