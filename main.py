@@ -3,7 +3,9 @@ import bubble
 import exchange
 import insert
 import selection
-
+import comb
+import merge
+import quick
 
 def random_list(number):
     while True:
@@ -22,5 +24,8 @@ if __name__ == '__main__':
 #    exchange.exchange_sort(pole)
 #    insert.insertion_sort(pole)
 #    selection.selection_sort(pole)
+#    comb.comb_sort(pole)
+###############    merge.merge_sort(pole)
+###############    quick.quick_sort(pole)
 
     print(pole)
