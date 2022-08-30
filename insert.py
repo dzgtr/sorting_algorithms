@@ -1,9 +1,10 @@
 def insertion_sort(pole):
-    for item in range(len(pole)):
+    working_array = pole.copy()
+    for item in range(len(working_array)-1):
         for current_item in range(item, -1, -1):
-            if current_item + 1 < len(pole):
-                if pole[current_item+1] < pole[current_item]:
-                    pole[current_item+1], pole[current_item] = pole[current_item], pole[current_item+1]
+            if working_array[current_item+1] < working_array[current_item]:
+                working_array[current_item+1], working_array[current_item] = working_array[current_item], working_array[current_item+1]
+    return working_array
 
 """
 Insert sort works by taking elements from the list one by one and inserting

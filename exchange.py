@@ -1,8 +1,10 @@
 def exchange_sort(pole):
-    for item in range(len(pole)):
-        for x in range(item + 1, len(pole)):
-            if pole[item] > pole[x]:
-                pole[item], pole[x] = pole[x], pole[item]
+    working_array = pole.copy()
+    for item in range(len(working_array)):
+        for x in range(item + 1, len(working_array)):
+            if working_array[item] > working_array[x]:
+                working_array[item], working_array[x] = working_array[x], working_array[item]
+    return working_array
 
 """
 Exchange sort works by comparing the first element with all elements above it, swapping where needed,

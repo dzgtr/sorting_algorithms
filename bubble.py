@@ -1,13 +1,13 @@
 def bubble_sort(pole):
-    while True:
+    working_array = pole.copy()
+    stop = False
+    while not stop:
         stop = True
-        for x in range(len(pole)):
-            if x+1 < len(pole):
-                if pole[x] > pole[x+1]:
-                    stop = False
-                    pole[x], pole[x+1] = pole[x+1], pole[x]
-        if stop:
-            break
+        for x in range(len(working_array)-1):
+            if working_array[x] > working_array[x+1]:
+                stop = False
+                working_array[x], working_array[x+1] = working_array[x+1], working_array[x]
+    return working_array
 
 """
 Bubble sort compares the first two elements, and if the first is greater than the second, it swaps them.

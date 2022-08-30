@@ -2,14 +2,10 @@ import statistics
 
 def quick_sort(pole):
     if len(pole) == 1:
-        print("Pole o velikosti 1 je: ", end="")
-        print(pole)
         return pole
     elif len(pole) == 2:
         if pole[0] > pole[1]:
             pole[0], pole[1] = pole[1], pole[0]
-        print("Pole o velikosti 2 je: ", end="")
-        print(pole)
         return pole
     else:
         lower_part, higher_part = [], []
@@ -19,13 +15,7 @@ def quick_sort(pole):
                 lower_part.append(pole[item])
             else:
                 higher_part.append(pole[item])
-        print("Pivot je: " + str(pivot))
-        print("Lower part: ", end="")
-        print(lower_part)
-        print("Higher part: ", end="")
-        print(higher_part)
         pole = quick_sort(lower_part) + quick_sort(higher_part)
-        print("Merged je: ", end="")
         print(pole)
         return pole
 

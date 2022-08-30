@@ -1,16 +1,16 @@
 def comb_sort(pole):
+    working_array = pole.copy()
     k = int(len(pole) / 1.3)
-    while True:
-        stop = True
-        for item in range(len(pole)):
-            if item+k < len(pole):
-                if pole[item] > pole[item+k]:
-                    pole[item], pole[item+k] = pole[item+k], pole[item]
-                    print(pole)
-                    stop = False
-        k = int(k/1.3)
-        if stop:
-            break
+    for twice in range(2):
+        while k > 0:
+            for item in range(len(working_array)):
+                if item+k < len(working_array):
+                    if working_array[item] > working_array[item+k]:
+                        working_array[item], working_array[item+k] = working_array[item+k], working_array[item]
+            k = int(k/1.3)
+            print(k)
+        k += 1
+    return working_array
 
 """
 Comb sort is based on Bubble sort with idea to eliminate turtles, or small values near the end of the list
